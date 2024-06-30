@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PLACO</title>
+<script src="https://kit.fontawesome.com/2e6a960b1a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center><h1>Manifescio</h1></center>
+<center><a href="https://steamcommunity.com/profiles/76561199292377880/"steam"%}" class="steam-button"><img src="steamicon.png"style="width:42px;height:42px;"></a></center>
+<center><a href="https://www.spotify.com/de-en/account/overview/" spotify"%}" class="spotify-button"><img src="spotifyicon.png"style="width:42px;height:42px;"></a></center>
+<center><a href="https://www.instagram.com/jiggerpascua/"instagram"%}" class="instagram-button"><img src="instaicon.png"style="width:42px;height:42px;"></a></center>
+<center><a href="https://www.tiktok.com/@manifescio"tiktok"%}" class="tiktok-button"><img src="tiktokicon.png"style="width:42px;height:42px;"></a></center>
+<audio src="backmusic.mp3" id="audio"></audio>
+<i class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()"></i>
+<center><i class="fa-solid fa-headphones fa-fade fa-2x" style="color: #f8f8f8;" onclick="play()" onclick="stop()"></i></center>
+</body>
+</html>
+</div>
+<script>
+    function play() {
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+            $('#play').removeClass('glyphicon-play-circle')
+            $('#play').addClass('glyphicon-pause')
+        }else{
+            audio.pause();
+            audio.currentTime = 0
+            $('#play').addClass('glyphicon-play-circle')
+            $('#play').removeClass('glyphicon-pause')
+        }
+    }
+</script>
+<style>
+    body {
+      background-image: url('mainback.gif');
+    }
+    h1 {color: rgb(255, 255, 255);}
+    h1 {font-family:verdana}
+     .steam-button, .spotify-button, .instagram-button, .tiktok-button, .steam-board {
+  display: block;
+  position: absolute;
+}
+
+.steam-button {
+  top: 500px;
+  right: 1300px;
+  
+}
+.spotify-button {
+  top: 700px;
+  right: 1300px;
+  
+}
+.instagram-button {
+  top: 500px;
+  right: 800px;
+  
+}
+.tiktok-button {
+  top: 700px;
+  right: 800px;
+  
+}
+        </style>
+    </style>
+</body>
+</html>
